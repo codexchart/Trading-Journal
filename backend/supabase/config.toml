@@ -1,0 +1,29 @@
+# Supabase CLI project configuration.
+# Used only if you choose to run Supabase locally with `supabase start`.
+# For the hosted (supabase.com) dashboard workflow described in
+# docs/SETUP_GUIDE.md, this file is not required — you can ignore it.
+
+project_id = "fx-journal-pro"
+
+[api]
+enabled = true
+port = 54321
+schemas = ["public", "storage"]
+
+[db]
+port = 54322
+
+[studio]
+enabled = true
+port = 54323
+
+[auth]
+enabled = true
+site_url = "http://localhost:3000"
+additional_redirect_urls = ["http://localhost:3000"]
+jwt_expiry = 3600
+enable_signup = true
+
+[storage]
+enabled = true
+file_size_limit = "10MiB"
