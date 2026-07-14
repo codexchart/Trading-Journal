@@ -11,7 +11,7 @@
 (function () {
   'use strict';
 
-  const SUPABASE_URL = 'https://ansrfmbvfjddyyymi.supabase.co';
+  const SUPABASE_URL = 'https://anrsrfmbvfjddyysiymi.supabase.co';
 
   const SUPABASE_ANON_KEY = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImFucnNyZm1idmZqZGR5eXNpeW1pIiwicm9sZSI6ImFub24iLCJpYXQiOjE3ODQwMTcxOTYsImV4cCI6MjA5OTU5MzE5Nn0.PLmql4AwybrOBCH9A30-uR25XH8j3COCcr9JYFpYY34';
 
