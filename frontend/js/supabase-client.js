@@ -11,19 +11,15 @@
 (function () {
   'use strict';
 
-  // TODO: replace with your project's values (Project Settings -> API).
-  // The anon/public key is SAFE to expose in client-side code — it only
-  // grants what your RLS policies allow. It is not a secret.
-const SUPABASE_URL = 'https://nuqigrsrdjrxmyrcdvdw.supabase.co';
-const SUPABASE_ANON_KEY = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6Im51cWlncnNyZGpyeG15cmNkdmR3Iiwicm9sZSI6ImFub24iLCJpYXQiOjE3ODM1MzAyMTMsImV4cCI6MjA5OTEwNjIxM30.TID7FYelN5Vp676-tMJrK3fOmr25fzOdJuzE2y-F7Nc';
+  const SUPABASE_URL = 'https://ansrfmbvfjddyyymi.supabase.co';
+
+  const SUPABASE_ANON_KEY = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImFucnNyZm1idmZqZGR5eXNpeW1pIiwicm9sZSI6ImFub24iLCJpYXQiOjE3ODQwMTcxOTYsImV4cCI6MjA5OTU5MzE5Nn0.PLmql4AwybrOBCH9A30-uR25XH8j3COCcr9JYFpYY34';
 
   if (!window.supabase) {
     console.error('Supabase SDK not loaded. Check the CDN <script> tag order in index.html.');
     return;
   }
 
-  // Exposed globally as window.sb — every other file (auth.js, database.js,
-  // script.js) talks to Supabase only through this single client instance.
   window.sb = window.supabase.createClient(SUPABASE_URL, SUPABASE_ANON_KEY, {
     auth: {
       persistSession: true,
